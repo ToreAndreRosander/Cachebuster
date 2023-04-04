@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cachebuster by Rosander</title>
+</head>
+<body>
+    <h1>Cachebuster</h1>
+    <p id="result"></p>
+    
+    <script type="text/javascript">
+        var cachebuster = Math.round(new Date().getTime() / 1000);
+        document.write('<lin'+'k href="./css/styles.css?cb=' + cachebuster + '" rel="stylesheet">');
+        document.write('<scr'+'ipt type="text/javascript" src="./js/main.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+    </script>
+</body>
+</html>
