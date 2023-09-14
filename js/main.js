@@ -11,7 +11,7 @@ function updateResult() {
     for (let i = 0; i < js.length; i++) {
         jsList += js[i].src + " ";
     }
-    result.innerHTML = "CSS: " + cssList + " JS: " + jsList;
+    result.innerHTML = "CSS: " + cssList + "<br>JS: " + jsList;
 }
 
 updateResult();
